@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A05C6331FB30D68006CBE4B /* NJKWebViewProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A05C62C1FB30D68006CBE4B /* NJKWebViewProgress.framework */; };
+		0A05C6351FB30D68006CBE4B /* NJKWebViewProgress.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A05C62C1FB30D68006CBE4B /* NJKWebViewProgress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A05C6391FB30DA0006CBE4B /* NJKWebViewProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 2677297117245E5C00D4E159 /* NJKWebViewProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A05C63A1FB30DA0006CBE4B /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677297217245E5C00D4E159 /* NJKWebViewProgress.m */; };
+		0A05C63B1FB30DA0006CBE4B /* NJKWebViewProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 260C2935183704EE0099D1B6 /* NJKWebViewProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A05C63C1FB30DA0006CBE4B /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C2936183704EE0099D1B6 /* NJKWebViewProgressView.m */; };
 		260C2937183704EE0099D1B6 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C2936183704EE0099D1B6 /* NJKWebViewProgressView.m */; };
 		2677297317245E5C00D4E159 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677297217245E5C00D4E159 /* NJKWebViewProgress.m */; };
 		2677297817245E7900D4E159 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677297517245E7900D4E159 /* AppDelegate.m */; };
@@ -22,7 +28,33 @@
 		26E5744E172235B500203262 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E5744D172235B500203262 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A05C6311FB30D68006CBE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26E5743E172235B500203262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A05C62B1FB30D68006CBE4B;
+			remoteInfo = NJKWebViewProgress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A05C6341FB30D68006CBE4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A05C6351FB30D68006CBE4B /* NJKWebViewProgress.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A05C62C1FB30D68006CBE4B /* NJKWebViewProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NJKWebViewProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A05C62F1FB30D68006CBE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		260C2935183704EE0099D1B6 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgressView.h; path = NJKWebViewProgress/NJKWebViewProgressView.h; sourceTree = SOURCE_ROOT; };
 		260C2936183704EE0099D1B6 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgressView.m; path = NJKWebViewProgress/NJKWebViewProgressView.m; sourceTree = SOURCE_ROOT; };
 		2677297117245E5C00D4E159 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgress.h; path = NJKWebViewProgress/NJKWebViewProgress.h; sourceTree = SOURCE_ROOT; };
@@ -46,11 +78,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A05C6281FB30D68006CBE4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26E57443172235B500203262 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				26E5744A172235B500203262 /* UIKit.framework in Frameworks */,
+				0A05C6331FB30D68006CBE4B /* NJKWebViewProgress.framework in Frameworks */,
 				26E5744C172235B500203262 /* Foundation.framework in Frameworks */,
 				26E5744E172235B500203262 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -59,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A05C62D1FB30D68006CBE4B /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				0A05C62F1FB30D68006CBE4B /* Info.plist */,
+			);
+			path = NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
 		260C2938183713360099D1B6 /* NJKWebViewProgress */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				26E5744F172235B500203262 /* DemoApp */,
+				0A05C62D1FB30D68006CBE4B /* NJKWebViewProgress */,
 				26E57448172235B500203262 /* Frameworks */,
 				26E57447172235B500203262 /* Products */,
 			);
@@ -93,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				26E57446172235B500203262 /* DemoApp.app */,
+				0A05C62C1FB30D68006CBE4B /* NJKWebViewProgress.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +187,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0A05C6291FB30D68006CBE4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A05C6391FB30DA0006CBE4B /* NJKWebViewProgress.h in Headers */,
+				0A05C63B1FB30DA0006CBE4B /* NJKWebViewProgressView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		0A05C62B1FB30D68006CBE4B /* NJKWebViewProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A05C6381FB30D68006CBE4B /* Build configuration list for PBXNativeTarget "NJKWebViewProgress" */;
+			buildPhases = (
+				0A05C6271FB30D68006CBE4B /* Sources */,
+				0A05C6281FB30D68006CBE4B /* Frameworks */,
+				0A05C6291FB30D68006CBE4B /* Headers */,
+				0A05C62A1FB30D68006CBE4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NJKWebViewProgress;
+			productName = NJKWebViewProgress;
+			productReference = 0A05C62C1FB30D68006CBE4B /* NJKWebViewProgress.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		26E57445172235B500203262 /* DemoApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26E57469172235B500203262 /* Build configuration list for PBXNativeTarget "DemoApp" */;
@@ -145,10 +225,12 @@
 				26E57442172235B500203262 /* Sources */,
 				26E57443172235B500203262 /* Frameworks */,
 				26E57444172235B500203262 /* Resources */,
+				0A05C6341FB30D68006CBE4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A05C6321FB30D68006CBE4B /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			productName = WebViewSample;
@@ -163,6 +245,12 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Satoshi Asano";
+				TargetAttributes = {
+					0A05C62B1FB30D68006CBE4B = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 26E57441172235B500203262 /* Build configuration list for PBXProject "DemoApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -177,11 +265,19 @@
 			projectRoot = "";
 			targets = (
 				26E57445172235B500203262 /* DemoApp */,
+				0A05C62B1FB30D68006CBE4B /* NJKWebViewProgress */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A05C62A1FB30D68006CBE4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26E57444172235B500203262 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +293,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A05C6271FB30D68006CBE4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A05C63A1FB30DA0006CBE4B /* NJKWebViewProgress.m in Sources */,
+				0A05C63C1FB30DA0006CBE4B /* NJKWebViewProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26E57442172235B500203262 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +315,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A05C6321FB30D68006CBE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A05C62B1FB30D68006CBE4B /* NJKWebViewProgress */;
+			targetProxy = 0A05C6311FB30D68006CBE4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2677298617245EB000D4E159 /* InfoPlist.strings */ = {
@@ -231,6 +344,111 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A05C6361FB30D68006CBE4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = NJKWebViewProgress/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hfax.NJKWebViewProgress;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A05C6371FB30D68006CBE4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = NJKWebViewProgress/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hfax.NJKWebViewProgress;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		26E57467172235B500203262 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -290,10 +508,12 @@
 		26E5746A172235B500203262 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -303,10 +523,12 @@
 		26E5746B172235B500203262 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -316,6 +538,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A05C6381FB30D68006CBE4B /* Build configuration list for PBXNativeTarget "NJKWebViewProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A05C6361FB30D68006CBE4B /* Debug */,
+				0A05C6371FB30D68006CBE4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		26E57441172235B500203262 /* Build configuration list for PBXProject "DemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
